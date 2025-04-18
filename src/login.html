@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <!--Metatags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Nature News</title>
+
+  <!-- Links -->
+  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../css/login.css">
+
+  <!-- Script dos Icons -->
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body class="login-body">
+  <!-- Container -->
+  <div class="background"></div>
+  <main class="container">
+    <div class="exit"><a href="../index.html"><ion-icon name="arrow-back-circle-outline"></ion-icon></a></div>
+
+    <!-- Login -->
+    <div class="logo-ajuste">
+      <img src="../img/logo.png" class="logo">
+    </div>
+    <h1 id="h1-login">Login</h1>
+
+    <form class="input-form" action="#">
+      <div class="input-field">
+        <input type="text" name="username" id="username" placeholder="Enter Your Username or Email" required>
+        <ion-icon name="person-outline"></ion-icon>
+        <div class="underline"></div>
+      </div>
+      
+      <div class="input-field">
+        <input type="password" name="password" id="password" placeholder="Password" required="">
+        <ion-icon name="lock-closed-outline" id="togglePassword1" onclick="togglePassword('password', 'togglePassword1')"></ion-icon>
+        <div class="underline"></div>
+      </div>
+
+      <label class="switch">
+        <input type="checkbox" id="mantenha-conectado" class="color-checkbox">
+        <span class="slider">Keep me signed in</span>
+        <span class="forgot"><a href="./forgot.html" class="toggle-link">Forgot password?</a></span>
+      </label>
+      
+      <input type="submit" value="Continue">
+    </form>
+    
+    <!-- Login com Redes Sociais -->
+    <div class="footer">
+      <span>Or Connect With Social Media</span>
+      <div class="social-icons">
+        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+      </div>
+      </div>
+      
+      <p class="account">Don't have an account?
+        <a href="./signup.html"><span class="toggle-link">Register</span></a>
+      </p>
+  </main>
+  <script src="../js/login.js"></script>
+</body>
+</html>
