@@ -8,26 +8,23 @@
   <title>Nature News</title>
 
   <!-- Links -->
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="../css/login.css">
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="../../css/login.css">
 
-  <!-- Script dos Icons -->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-<body class="login-body">
-  <!-- Container -->
+  
+  <body class="login-body">
+    <!-- Container -->
   <div class="background"></div>
   <main class="container">
     <div class="exit"><a href="login.html"><ion-icon name="arrow-back-circle-outline"></ion-icon></a></div>
 
     <!-- Register -->
     <div class="logo-ajuste">
-      <img src="../img/logo.png" class="logo">
+      <img src="../../img/logo.png" class="logo">
     </div>
     <h1 id="h1-signup">Sign Up</h1>
 
-    <form class="input-form" action="login.html" onsubmit="return validarSenha()">
+    <form class="input-form" action="../../index.html" onsubmit="return validarSenha()">
       <div class="input-field">
         <input type="text" name="username" id="username" placeholder="Username" required>
         <ion-icon name="person-outline"></ion-icon>
@@ -55,7 +52,7 @@
       <label class="switch">
         <p class="agree">
           <input type="checkbox" class="color-checkbox" id="agree" required="">I agree with the
-          <a href="terms.html">
+          <a href="../terms.html">
             <span class="toggle-link">Terms of Use</span>
           </a>.
         </p>
@@ -64,7 +61,7 @@
       <label class="switch">
         <p class="agree">
           <input type="checkbox" class="color-checkbox" id="agree" required="">I agree with the
-          <a href="policy.html">
+          <a href="../policy.html">
             <span class="toggle-link">Privacy Policy</span>
           </a>.
         </p>
@@ -127,6 +124,11 @@
       }
     }
     </script>
+
     <script src="./js/login.js"></script>
+    
+    <!-- Script dos Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>
