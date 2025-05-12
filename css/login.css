@@ -238,7 +238,7 @@ input[type="checkbox"] {
 }
 
 .slider {
-  color: var(--secondary);
+  color: #147c3c;
   font-size: 1rem;
 }
 /* Forgot password */
@@ -346,11 +346,11 @@ margin-top: 2rem;
   transition: color 0.4s;
   cursor: pointer;
   font-size: 1rem;
-  color: var(--secondary);
+  color: #147c3c;
 }
 
 .toggle-link:hover {
-  color: var(--tertiary);
+  color: #1d964c;
 }
 
 /* POLICY AND TERMS */
