@@ -268,7 +268,26 @@ nav.container {
     background-color: #d28eff;
 }
 
+
 /* Main */
+.layout {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+}
+
+main {
+    flex: 2; /* Ocupa o espaço restante */
+}
+  
+aside {
+    width: 300px; /* Ou qualquer largura desejada */
+    margin-left: 20px; /* Espaço entre o main e o aside */
+}
+
+aside.container {
+    background-color: blue;
+}
 
 .titulo {
     text-align: center;
