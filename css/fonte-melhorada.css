@@ -1,0 +1,26 @@
+/* Ajustes para o tamanho das fontes nas notícias */
+
+/* Estilo para títulos h3 */
+.containerimg h3,
+.containerimg2 h3,
+.containerimg3 h3,
+.containerimg4 h3 {
+    margin-left: 1rem;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: #093D2A;
+    line-height: 1.3;
+}
+
+/* Estilo para descrições das notícias */
+.containerimg p,
+.containerimg2 p,
+.containerimg3 p,
+.containerimg4 p {
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: #555;
+}
