@@ -144,6 +144,8 @@ main a {
 
 /* Verify H1 e p */
 #verify-h1 {
+  margin-top: 1rem;
+  font-size: 1.8rem;
   font-weight: 600;
   text-align: center;
   margin-bottom: 1rem;
@@ -239,11 +241,12 @@ input[type="checkbox"] {
 
 .slider {
   color: #147c3c;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 /* Forgot password */
 .forgot {
-  margin-left: 7.1rem;
+  font-size: 0.9;
+  margin-left: 3.1rem;
   text-align: right;
   text-decoration: none;
   transition: color 0.2s;

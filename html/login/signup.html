@@ -26,7 +26,7 @@
 
     <form class="input-form" action="../../index.html" onsubmit="return validarSenha()">
       <div class="input-field">
-        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="text" name="username" id="username" placeholder="Nome de Usuário" required>
         <ion-icon name="person-outline"></ion-icon>
         <div class="underline"></div>
       </div>
@@ -38,31 +38,31 @@
       </div>
 
       <div class="input-field">
-        <input type="password" name="password" id="password" placeholder="Password" required="">
+        <input type="password" name="password" id="password" placeholder="Senha" required="">
         <ion-icon name="lock-closed-outline" id="togglePassword1" onclick="togglePassword('password', 'togglePassword1')"></ion-icon>
         <div class="underline"></div>
       </div>
       
       <div class="input-field">
-        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required="">
+        <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirme a Senha" required="">
         <ion-icon name="lock-closed-outline" id="togglePassword2" onclick="togglePassword('confirmPassword', 'togglePassword2')"></ion-icon>
         <div class="underline"></div>
       </div>
 
       <label class="switch">
         <p class="agree">
-          <input type="checkbox" class="color-checkbox" id="agree" required="">I agree with the
+          <input type="checkbox" class="color-checkbox" id="agree" required="">Eu concordo com os
           <a href="../terms.html">
-            <span class="toggle-link">Terms of Use</span>
+            <span class="toggle-link">Termos de Uso</span>
           </a>.
         </p>
       </label>
       
       <label class="switch">
         <p class="agree">
-          <input type="checkbox" class="color-checkbox" id="agree" required="">I agree with the
+          <input type="checkbox" class="color-checkbox" id="agree" required="">Eu concordo com a
           <a href="../policy.html">
-            <span class="toggle-link">Privacy Policy</span>
+            <span class="toggle-link">Política de Privacidade</span>
           </a>.
         </p>
       </label>
@@ -73,59 +73,19 @@
     
     <!-- Login com Redes Sociais -->
     <div class="footer">
-      <span>Or Connect With Social Media</span>
+      <span>Ou Entre com uma Rede Social</span>
       <div class="social-icons">
         <a href="https://www.instagram.com/" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-        <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+        <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="https://accounts.google.com/" target="_blank"><ion-icon name="logo-google"></ion-icon></a>
+        <a href="https://www.linkedin.com/login/pt" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a>
       </div>
     </div>
       
-    <p class="account">Already have an account?
-      <a href="./login.html"><span class="toggle-link">Sign In</span></a>
+    <p class="account">Já possui uma conta?
+      <a href="./login.html"><span class="toggle-link">Entre</span></a>
     </p>
   </main>
-  
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      // Tornar os ícones clicáveis
-      var toggleIcons = document.querySelectorAll('.input-field ion-icon[id^="toggle"]');
-      toggleIcons.forEach(function(icon) {
-        icon.style.pointerEvents = 'auto';
-        icon.style.cursor = 'pointer';
-      });
-    });
-
-    function validarSenha() {
-      const senha = document.getElementById("password").value;
-      const confirmar = document.getElementById("confirmPassword").value;
-      const mensagem = document.getElementById("mensagemErro");
-  
-      if (senha !== confirmar) {
-        mensagem.textContent = "As senhas não coincidem.";
-        return false;
-      }
-  
-      mensagem.textContent = "";
-      return true;
-    }
-
-    function togglePassword(inputId, iconId) {
-      var passwordInput = document.getElementById(inputId);
-      var icon = document.getElementById(iconId);
-      
-      if (passwordInput.type === "password") {
-        passwordInput.type = "text";
-        icon.setAttribute("name", "lock-open-outline"); // Mudar para cadeado aberto
-      } else {
-        passwordInput.type = "password";
-        icon.setAttribute("name", "lock-closed-outline"); // Mudar para cadeado fechado
-      }
-    }
-    </script>
-
-    <script src="./js/login.js"></script>
     
     <!-- Script dos Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
