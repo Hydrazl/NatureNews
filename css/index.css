@@ -149,6 +149,18 @@ ion-icon.icons-map {
     margin-right: 0.3rem;
 } 
 
+.footer-link ion-icon {
+    display: inline-flex;
+    transition: color 0.3s ease;
+    vertical-align: -25%;
+    font-size: 1.4rem;
+    margin-right: 0.1rem;
+}
+
+#space {
+    margin-top: 1.3rem;
+}
+
 .learn-more ul li {
     line-height: 1.1;
     margin-bottom: 0.7rem;
