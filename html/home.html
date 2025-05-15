@@ -2,13 +2,14 @@
 <html lang="pt-br">
 <head>
     <!--matatags-->
-    <meta name="viewport" content="width=device-width, initial-scale">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Links-->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/home.css">
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
 
     <title>Nature News</title>
@@ -17,7 +18,7 @@
 <body>
     <header class="container">
         <picture class="logo">
-            <img src="img/logo.png" alt="Logo Meio Ambiente">
+            <img src="../img/logo.png" alt="Logo Meio Ambiente">
         </picture>
     
         <!-- Barra de pesquisa -->
@@ -58,30 +59,79 @@
 
     <div class="layout">
 
-        <!-- Aside -->
-        <aside class="container">
-            <div class="sidebar-widget popular-news">
-                <h3><ion-icon name="flame-outline"></ion-icon>Noticias Mais Lidas</h3>
-                <ul>
+        <!-- Conteúdo para o Aside -->
+        <aside class="container sidebar">
+            <!-- Widget do Clima -->
+            <div class="sidebar-widget weather-widget">
+                <h3><ion-icon name="cloudy-outline"></ion-icon> Previsão do Tempo</h3>
+                <div class="weather-location">
+                    <span>Caraguatatuba</span>
+                    <ion-icon name="thermometer-outline"></ion-icon>
+                </div>
+                <div class="weather-info">
+                    <div class="weather-day">
+                        <span class="day">Hoje</span>
+                        <div class="temp">23°C / 17°C</div>
+                        <div class="condition">Nublado</div>
+                    </div>
+                    <div class="weather-day">
+                        <span class="day">Amanhã</span>
+                        <div class="temp">22°C / 16°C</div>
+                        <div class="condition">Chuva</div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Notícias Populares -->
+            <div class="sidebar-widget popular-news">
+                <h3><ion-icon name="flame-outline"></ion-icon> Mais Lidas</h3>
+                <ul>
                     <li>
-                        <a href="#">Noticia Popular 1</a>
+                        <a href="#">Novo relatório sobre aquecimento global mostra aumento preocupante</a>
                     </li>
-                    
                     <li>
-                        <a href="#">Noticia Popular 2</a>
+                        <a href="#">Como economizar água no dia a dia</a>
                     </li>
-                    
                     <li>
-                        <a href="#">noticia Popular 3</a>
+                        <a href="#">Empresas brasileiras investem em energia renovável</a>
                     </li>
                 </ul>
             </div>
+            
+            <!-- Índices Ambientais -->
+            <div class="sidebar-widget environmental-index">
+                <h3><ion-icon name="leaf-outline"></ion-icon> Índices Ambientais</h3>
+                <div class="index-item">
+                    <span>Qualidade do Ar</span>
+                    <div class="index-bar">
+                        <div class="index-level" style="width: 75%"></div>
+                    </div>
+                    <span class="index-value">Boa (75/100)</span>
+                </div>
+                <div class="index-item">
+                    <span>Emissão de CO₂</span>
+                    <div class="index-bar">
+                        <div class="index-level" style="width: 65%; background-color: #FFB347;"></div>
+                    </div>
+                    <span class="index-value">Moderada</span>
+                </div>
+            </div>
+            
+            <!-- Newsletter -->
+            <div class="sidebar-widget newsletter">
+                <h3><ion-icon name="mail-outline"></ion-icon> Receba Nossas Notícias</h3>
+                <p>Fique por dentro das últimas notícias sobre meio ambiente.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu e-mail" required>
+                    <button type="submit">Inscrever-se</button>
+                </form>
+            </div>
 
-            <div class="sidebar-widget">
-                <h3><ion-icon name="leaf-outline"></ion-icon>Índice Ambientais</h3>
-
-                <!-- Sla o Resto -->
+            <!--Botão topo-->
+            <div class="button">
+                <a href="#" class="back-top-btn" aria-label="topo">
+                    <ion-icon name="arrow-up-outline"></ion-icon>
+                </a>
             </div>
         </aside>
 
@@ -91,7 +141,7 @@
             <section>
                 <!--not1-->
                 <article class="containerimg">
-                    <div class="not1"><img src="img/climate_change/notice-1.webp" alt=""></div>
+                    <div class="not1"><img src="../img/climate_change/notice-1.webp" alt=""></div>
                     <div class="text">
                         <p>
                             Descubra se o seu lixo é reciclável! Aprenda a identificar materiais recicláveis, como PET colorido, 
@@ -103,7 +153,7 @@
                 <!--not2-->
 
                 <article class="containerimg2">
-                    <div class="not2"><img src="img/climate_change/notice-2.webp" alt=""></div>
+                    <div class="not2"><img src="../img/climate_change/notice-2.webp" alt=""></div>
                     <div class="text2">
                         <p>
                             País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
@@ -114,7 +164,7 @@
             <br>
                     <!--not3-->
                 <article class="containerimg3">
-                    <div class="not3"><img src="img/climate_change/notice-3.webp" alt=""></div>
+                    <div class="not3"><img src="../img/climate_change/notice-3.webp" alt=""></div>
                     <div class="text3">
                         <p>
                             País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
@@ -125,7 +175,7 @@
             <br>
                 <!--not4-->
                 <article class="containerimg3">
-                    <div class="not3"><img src="img/climate_change/notice-4.webp" alt=""></div>
+                    <div class="not3"><img src="../img/climate_change/notice-4.webp" alt=""></div>
                     <div class="text3">
                         <p>
                             País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
@@ -142,7 +192,7 @@
                 <div class="container-footer">
                     <div class="footer-brand">
                         <a href="" class="logo" id="logo">
-                            <img src="img/logo.png" alt="logo" width="150" height="75">
+                            <img src="../img/logo.png" alt="logo" width="150" height="75">
                         </a>
 
                         <p class="footer-text">

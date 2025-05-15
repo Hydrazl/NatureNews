@@ -270,24 +270,6 @@ nav.container {
 
 
 /* Main */
-.layout {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: flex-start;
-}
-
-main {
-    flex: 2; /* Ocupa o espaço restante */
-}
-  
-aside {
-    width: 300px; /* Ou qualquer largura desejada */
-    margin-left: 20px; /* Espaço entre o main e o aside */
-}
-
-aside.container {
-    background-color: blue;
-}
 
 .titulo {
     text-align: center;
@@ -320,11 +302,10 @@ aside.container {
 .titulo:hover::after {
     width: 15%;
 }
-/*clima
 
+/*previ*/
 
 .containerpre {
-    display: flex;
     flex-direction: column;
     text-align: center;
     margin-right: 100px;
@@ -347,17 +328,12 @@ aside.container {
     border-bottom: 1px solid #eaeaea;
 }
 
-.containerM {
-    display: flex;
-    flex-direction: column;
-}
-
 .cit {
     color: #5fafec;
 }
 .previ {
     color: #5fafec;
-}*/
+}
 
 /* not1 */
 
@@ -367,7 +343,6 @@ aside.container {
     height: 350px;
     margin: 20px;
     padding: 25px;
-    margin: 20px auto;
     align-items: center;
     justify-content: center;
     border-radius: 16px;
@@ -423,7 +398,6 @@ aside.container {
     display: flex;
     width: 1300px;
     height: 350px;
-    margin: 20px auto;
     padding: 25px;
     align-items: center;
     justify-content: center;
@@ -478,7 +452,6 @@ aside.container {
     display: flex;
     width: 1300px;
     height: 350px;
-    margin: 20px auto;
     padding: 25px;
     align-items: center;
     justify-content: center;
@@ -533,7 +506,6 @@ aside.container {
     display: flex;
     width: 1300px;
     height: 350px;
-    margin: 20px auto;
     padding: 25px;
     align-items: center;
     justify-content: center;
