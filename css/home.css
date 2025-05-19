@@ -33,7 +33,6 @@
 
 
  /*==== transição ====*/
-
  --transition-1: 250ms ease;
  --transition-2: 500ms ease;
  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
@@ -223,14 +222,13 @@
 }
 
 /*Botão topo*/
-
 .back-top-btn {
     background-color: #1c753e;
     color: white;
     position: fixed;
     bottom: 50px;
     right: 20px;
-    padding: 0.7rem;
+    padding: 0.5rem;
     display: grid;
     place-items: center;
     font-size: 2rem;

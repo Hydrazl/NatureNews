@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
 
     <title>Nature News</title>
 </head>
@@ -32,7 +32,7 @@
         
         <!-- Botão de login -->
             <div class="login-container">
-                <a href="html/login/login.html">
+                <a href="login/login.html">
                     <button class="login-button">
                         <ion-icon name="person-circle-outline"></ion-icon>
                         Acessar conta
@@ -40,14 +40,15 @@
                 </a>
             </div>
         </div>
+
     </header>
 
     <!-- navbar -->
     <nav class="container">
-        <div class="meio "><button>Meio Ambiente</button></div>
-        <div class="mudanças "><button>Mudanças Climáticas</button></div>
-        <div class="prevenções "><button>Prevenções Ambientais</button></div>
-        <div class="tecnologias "><button>tecnologias Sustentáveis</button></div>  
+        <div class="meio"><a href="environment/environment.html"><button>Meio Ambiente</button></a></div>
+        <div class="mudanças"><a href="../index.html"><button>Mudanças Climáticas</button></a></div>
+        <div class="prevenções"><button>Prevenções Ambientais</button></div>
+        <div class="tecnologias"><button>tecnologias Sustentáveis</button></div>  
     </nav>
 
 
@@ -59,7 +60,7 @@
 
     <div class="layout">
 
-        <!-- Conteúdo para o Aside -->
+        <!-- Aside -->
         <aside class="container sidebar">
             <!-- Widget do Clima -->
             <div class="sidebar-widget weather-widget">
@@ -284,23 +285,33 @@
                         <ul>
                             <li>
                                 <a href="#" class="footer-link">Envie sua notícia
+                                    <ion-icon name="paper-plane-outline"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="#" class="footer-link">Estudos e pesquisas</a>
+                                <a href="#" class="footer-link">Estudos e pesquisas
+                                    <ion-icon name="newspaper-outline"></ion-icon>
+                                </a>
                             </li>
                             
                             <li>
-                                <a href="html/policy.html" class="footer-link">Política de Privacidade</a>
+                                <a href="html/policy.html" class="footer-link" id="space">Política de Privacidade
+                                    <ion-icon name="document-text-outline"></ion-icon>
+                                </a>
                             </li>
                             
                             <li>
-                                <a href="html/terms.html" class="footer-link">Termos de Uso</a>
+                                <a href="html/terms.html" class="footer-link">Termos de Uso
+                                    <ion-icon name="document-text-outline"></ion-icon>
+                                </a>
                             </li>
 
                             <li>
-                                <a href="#" class="footer-link link">Denuncie problemas ambientais</a>
+                                <a href="#" class="footer-link link" id="space">
+                                    Denuncie problemas ambientais
+                                    <ion-icon name="alert-circle-outline"></ion-icon>
+                                </a>
                             </li>
                         </ul>
                     </div>
