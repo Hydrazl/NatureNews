@@ -38,7 +38,7 @@ body {
 }
 
 /* Header */
-header.container {
+.cabecalho {
     display: flex;
     justify-content: flex-end; 
     padding: 12px 20px;
@@ -58,7 +58,7 @@ header.container {
 }
 
 .logo img {
-    width: 100%;
+    width: 70%;
     height: auto;
 }
 
