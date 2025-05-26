@@ -183,12 +183,53 @@ header.container a {
     text-decoration: none;
 }
 
+/* Account Dropdown */
+details {
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s ease;
+}
+
+details ion-icon {
+    display: inline-flex;
+    transition: color 0.3s ease;
+    vertical-align: -8%;
+    font-size: 20px;
+    margin-right: 0.3rem;
+}
+
+summary {
+    align-items: center;
+    background-color: transparent;
+    color: #ffffff;
+    padding: 8px 24px;
+    gap: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    list-style: none;
+    font-size: 14px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: #012619;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    z-index: 2;
+}
+
+.dropdown-menu li{
+    margin-top: 4px;
+}
+
 /* Navbar */
 nav.container {
     display: flex;
     background-color:  #0E5B40;
     align-items: center;
-    padding: 10px 200px;
+    padding: 12px 200px;
     justify-content: space-evenly;
     position: relative;
 }
