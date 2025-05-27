@@ -249,6 +249,29 @@ details[open] summary {
     margin-top: 4px;
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.modal-content {
+    background-color: #0E5B40;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+}
+
+li input[type="checkbox"]:checked ~ .modal {
+    display: flex;
+  }
+
 /* Navbar */
 nav.container {
     display: flex;

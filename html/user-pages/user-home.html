@@ -51,21 +51,33 @@
                                 </a>
                             </li>
 
-                            <li><a href="">
-                                <ion-icon name="document-text-outline"></ion-icon>Publicações
-                            </a>
-                        </li>
-
                             <li>
                                 <a href="">
-                                    <ion-icon name="log-out-outline"></ion-icon>Sair
+                                    <ion-icon name="document-text-outline"></ion-icon>Publicações
                                 </a>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="modal-toggle" hidden>
+                                <label for="modal-toggle" class="link-button">
+                                    <ion-icon name="log-out-outline"></ion-icon> Sair
+                                </label>  
                             </li>
                         </ul>
                     </details>
                 </div>
             </div>
         </div>
+
+        <div class="modal">
+            <div class="modal-content">
+              <p>Tem certeza que deseja sair?</p>
+              
+              <a href="../../index.html" class="link-button" style="color: red;">
+                Confirmar Saída
+              </a>
+            </div>
+          </div>
         
         <!-- navbar -->
         <nav class="container">
