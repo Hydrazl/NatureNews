@@ -186,7 +186,6 @@ header.container a {
 /* Account Dropdown */
 details {
     border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
     color: rgba(255, 255, 255, 1);
     transition: all 0.3s ease;
 }
@@ -199,6 +198,17 @@ details ion-icon {
     margin-right: 0.3rem;
 }
 
+details li {
+    transition: all 0.3s ease;
+}
+
+details li:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+    color: #8effb1;
+}
+
 summary {
     align-items: center;
     background-color: transparent;
@@ -209,6 +219,21 @@ summary {
     border-radius: 4px;
     list-style: none;
     font-size: 14px;
+    transition: all 0.3s ease;
+    transition: transform 0.5s;
+}
+
+summary:hover {
+    transform: scale(1.15);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #8effb1;
+}
+
+details[open] summary {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #8effb1;
 }
 
 .dropdown-menu {
