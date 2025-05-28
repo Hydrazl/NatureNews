@@ -261,11 +261,46 @@ details[open] summary {
 }
 
 .modal-content {
-    background-color: #0E5B40;
-    padding: 30px;
+    background-color: #d9d9d9;
+    padding: 2rem 3rem;
     border-radius: 8px;
-    max-width: 400px;
+    max-width: 800px;
     text-align: center;
+}
+
+.modal-content p {
+    font-size: 1.3rem;
+}
+
+label.close ion-icon {
+    position: relative;
+    top: -25px;
+    left: -40px;
+    font-size: 2.2rem;
+    cursor: pointer;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+label.close ion-icon:hover {
+    transform: scale(1.2);
+    color: var(--tertiary);
+}
+
+.link-button {
+    background-color: var(--tertiary);
+    color: white;
+    padding: 0.2rem;
+    margin-left: 2.5rem; margin-right: 2.5rem; margin-top: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #e53935;
+    transform: translateY(-5px);
+    outline: 2px solid #b71c1c;
+    outline-offset: 3px;
 }
 
 input[type="checkbox"]:checked ~ .modal {

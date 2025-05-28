@@ -58,8 +58,7 @@
                             </li>
 
                             <li>
-                                <input type="checkbox" id="modal-toggle" hidden>
-                                <label for="modal-toggle" class="link-button">
+                                <label for="modal-toggle">
                                     <ion-icon name="log-out-outline"></ion-icon> Sair
                                 </label>  
                             </li>
@@ -68,12 +67,17 @@
                 </div>
             </div>
         </div>
-
+        
+        <input type="checkbox" id="modal-toggle" hidden>
+        
         <div class="modal">
             <div class="modal-content">
+                <label class="close" for="modal-toggle">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </label>
               <p>Tem certeza que deseja sair?</p>
               
-              <a href="../../index.html" class="link-button" style="color: red;">
+              <a href="../../index.html" class="link-button">
                 Confirmar Saída
               </a>
             </div>
