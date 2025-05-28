@@ -268,9 +268,13 @@ details[open] summary {
     text-align: center;
 }
 
-li input[type="checkbox"]:checked ~ .modal {
+input[type="checkbox"]:checked ~ .modal {
     display: flex;
-  }
+}
+
+#modal-toggle {
+    display: none;
+}
 
 /* Navbar */
 nav.container {
