@@ -1,0 +1,28 @@
+section.container {
+    display: grid;
+    padding: 2rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.layout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.user-block {
+    background-color: #d9d9d9;
+    width: 100vw;
+    height: 75vh;
+}
+
+.user-block ion-icon {
+    font-size: 5rem;
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+.bio-container {
+    background-color: #e3e3e3;
+    width: ;
+}

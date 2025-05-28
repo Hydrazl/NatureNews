@@ -7,8 +7,7 @@
     
     <!--Links-->
     <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/home.css">
-    <link rel="stylesheet" href="../../css/carrossel.css">
+    <link rel="stylesheet" href="../../css/profile.css">
     
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
@@ -40,7 +39,7 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="user-profile.html">
+                                <a href="">
                                     <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
                                 </a>
                             </li>
@@ -67,7 +66,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Pop-Up Log-Out -->
         <input type="checkbox" id="modal-toggle" hidden>
         <div class="modal">
@@ -92,145 +91,74 @@
         </nav>
     </header>
 
-    <!-- Carrossel -->
-    <div class="carrossel-align">
-        <div class="carrossel">
-            <div class="carrossel-track">
-                <a href="#"><img src="../../img/carrossel/Jaguar.png" alt=""></a>
-                <a href="#"><img src="../../img/carrossel/Fumaça.png" alt=""></a>
-                <a href="#"><img src="../../img/carrossel/Sp-sky.png" alt=""></a>
-                <a href="#"><img src="../../img/carrossel/Solar Panels.png" alt=""></a>
-                <a href="#"><img src="../../img/carrossel/Planting-trees.png" alt=""></a>
-            </div>
-        </div>
-    </div>
-    
-    <div class="layout">
-        
     <!-- Main -->
-        <main>
-    
-            <section>
-                <!--not1-->
-                <article class="containerimg">
-                    <div class="not1"><a href="not1Páginaprincipal.html"></a><img src="../../img/climate_change/notice-1.webp" alt=""></div>
-                    <div class="text">
-                        <p>
-                            Descubra se o seu lixo é reciclável! Aprenda a identificar materiais recicláveis, como PET colorido, 
-                            embalagens de salgadinho e plástico descartável. Contribua para um futuro sustentável com a reciclagem correta.
-                        </p>
-                    </div>
-                </article>
-
-                <!--not2-->
-                <article class="containerimg2">
-                    <div class="not2"><img src="../../img/climate_change/notice-2.webp" alt=""></div>
-                    <div class="text2">
-                        <p>
-                            País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
-                        </p>
-                    </div>
-                </article>
-
-                    <!--not3-->
-                <article class="containerimg3">
-                    <div class="not3"><img src="../../img/climate_change/notice-3.webp" alt=""></div>
-                    <div class="text3">
-                        <p>
-                            País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
-                        </p>
-                    </div>
-                </article>
-
-                <!--not4-->
-                <article class="containerimg3">
-                    <div class="not3"><img src="../../img/climate_change/notice-4.webp" alt=""></div>
-                    <div class="text3">
-                        <p>
-                            País viveu ondas de calor consecutivas, com cidades batendo recorde de temperatura. No Rio de Janeiro, mar chegou a mudar de cor por causa do calor excessivo.
-                        </p>
-                    </div>
-                </article> 
-            </section>
-        </main>
-
-        <!-- Aside -->
-        <aside class="container sidebar">
-            <!-- Widget do Clima -->
-            <div class="sidebar-widget weather-widget">
-                <h3><ion-icon name="cloudy-outline"></ion-icon> Previsão do Tempo</h3>
-                <div class="weather-location">
-                    <span>Caraguatatuba</span>
-                    <ion-icon name="thermometer-outline"></ion-icon>
+     <section class="container">
+        <div class="layout">
+            <article class="user-block">
+                <ion-icon name="person-circle-outline"></ion-icon>
+                <h1>Usuário</h1>
+                <h1>Email</h1>
+                <div class="bio-container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum fuga assumenda deleniti debitis nulla, explicabo harum magni corrupti quam mollitia excepturi sapiente, enim, laborum quis numquam repellendus qui! Amet, architecto?</p>
                 </div>
-                <div class="weather-info">
-                    <div class="weather-day">
-                        <span class="day">Hoje</span>
-                        <div class="temp">23°C / 17°C</div>
-                        <div class="condition">Nublado</div>
-                    </div>
-                    <div class="weather-day">
-                        <span class="day">Amanhã</span>
-                        <div class="temp">22°C / 16°C</div>
-                        <div class="condition">Chuva</div>
-                    </div>
+            </article>
+
+            <aside class="notice-aside"></aside>
+        </div>
+
+        <article class="notes-container">
+            <h1>Artigos & Notas Cinetíficas</h1>
+        </article>
+
+        <article class="settings-container">
+            <h3>Aletarções da Conta</h3>
+
+            <div class="settings-block">
+                <div class="settings-layout">
+                    <span class="setting-span">Usuário: Cleiton-Pneu</span>
+                    <button>
+                        <a href="#">Alterar Nome de Usuário</a>
+                    </button>
+                </div>
+
+                <div class="settings-layout">
+                    <span class="setting-span">Email atual: email@exemplo.com</span>
+                    <button>
+                        <a href="#">Alterar E-mail</a>
+                    </button>
+                </div>
+                
+                <div class="settings-layout">
+                    <span class="setting-span">Deseja alterar a sua senha?</span>
+                    <button>
+                        <a href="#">Alterar Senha</a>
+                    </button>
+                </div>
+
+                <div class="settings-layout">
+                    <span class="setting-span">Deseja deletar sua conta?</span>
+                    <label for="delete-account">
+                        Deletar Conta
+                    </label>
                 </div>
             </div>
+        </article>
+     </section>
 
-            <!-- Notícias Populares -->
-            <div class="sidebar-widget popular-news">
-                <h3><ion-icon name="flame-outline"></ion-icon> Mais Lidas</h3>
-                <ul>
-                    <li>
-                        <a href="#">Novo relatório sobre aquecimento global mostra aumento preocupante</a>
-                    </li>
-                    <li>
-                        <a href="#">Como economizar água no dia a dia</a>
-                    </li>
-                    <li>
-                        <a href="#">Empresas brasileiras investem em energia renovável</a>
-                    </li>
-                </ul>
-            </div>
-            
-            <!-- Índices Ambientais -->
-            <div class="sidebar-widget environmental-index">
-                <h3><ion-icon name="leaf-outline"></ion-icon> Índices Ambientais</h3>
-                <div class="index-item">
-                    <span>Qualidade do Ar</span>
-                    <div class="index-bar">
-                        <div class="index-level" style="width: 75%"></div>
-                    </div>
-                    <span class="index-value">Boa (75/100)</span>
-                </div>
-                <div class="index-item">
-                    <span>Emissão de CO₂</span>
-                    <div class="index-bar">
-                        <div class="index-level" style="width: 65%; background-color: #FFB347;"></div>
-                    </div>
-                    <span class="index-value">Moderada</span>
-                </div>
-            </div>
-            
-            <!-- Newsletter -->
-            <div class="sidebar-widget newsletter">
-                <h3><ion-icon name="mail-outline"></ion-icon> Receba Nossas Notícias</h3>
-                <p>Fique por dentro das últimas notícias sobre meio ambiente.</p>
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Seu e-mail" required>
-                    <button type="submit">Inscrever-se</button>
-                </form>
-            </div>
-
-            <!--Botão topo-->
-            <div class="button">
-                <a href="#" class="back-top-btn" aria-label="topo">
-                    <ion-icon name="arrow-up-outline"></ion-icon>
-                </a>
-            </div>
-        </aside>
-
-    </div>
+     <!-- Delete Account -->
+     <input type="checkbox" id="delete-account" hidden>
+     <div class="modal">
+        <div class="modal-content">
+            <label class="close" for="delete-account">
+                <ion-icon name="close-circle-outline"></ion-icon>
+            </label>
+          <p>Tem certeza que deseja deletar sua conta?</p>
+          
+          <a href="../profile.html" class="link-button">
+            Deletar Conta
+          </a>
+        </div>
+      </div>
 
         <!-- Footer -->
         <footer class="footer">
