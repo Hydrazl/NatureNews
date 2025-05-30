@@ -18,7 +18,7 @@ section.container {
     grid-template-rows: auto;
     background-color: #d9d9d9;
     border-radius: 8px;
-    width: 70vw;
+    width: 100%;
     height: 45vh;
 }
 
@@ -43,7 +43,7 @@ section.container {
     padding: 1rem;
     top: -5.7rem;
     background-color: #e3e3e3;
-    width:67vw;
+    width:97%;
     height: 33vh;
     border-radius: 8px;
 }
@@ -51,16 +51,24 @@ section.container {
 /* Notice Aside */
 .notice-aside {
     background-color: #d9d9d9;
-    width: 22.5vw;
+    width: 25%;
     height: 45vh;
     border-radius: 8px;
     text-align: center;
 }
 
 .notice-aside h1,
-.notes-container h1 {
+.notes-container h1,
+.settings-container h1 {
     font-size: 1.4rem;
     transform: translate(0, 0.5rem);
+}
+
+.notice-aside i {
+    display: inline-flex;
+    font-size: 1.3rem;
+    margin-right: 0.3rem;
+    color: black;
 }
 
 /* Notes-Articles */
@@ -77,9 +85,52 @@ section.container {
     border-radius: 8px;
     background-color: #e3e3e3;
     height: 20vh;
-    width: 90vw;
+    width: 97%;
+}
+
+.notes-container h1 {
+    transform: translate(2rem, 1rem);
+}
+
+.notes-container ion-icon {
+    display: inline-flex;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    vertical-align: -0.4rem;
 }
 
 /* Settigs */
 .settings-container {
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    height: 40vh;
+}
+
+.settings-container h1 {
+    transform: translate(2rem, 1rem);
+}
+
+.settings-container ion-icon {
+    display: inline-flex;
+    font-size: 2rem;
+    margin-right: 0.5rem;
+    vertical-align: -0.5rem;
+    transition: transform 4s ease;
+}
+
+.settings-container:hover ion-icon{
+    transform: rotate(480deg);
+}
+
+.settings-block {
+    background-color: #e3e3e3;
+    border-radius: 8px;
+    height: 30vh;
+    width: 97%;
+    justify-self: center;
+    transform: translate(0, 2rem);
+}
+
+.settings-layout {
+    display: inline-flex;
 }
