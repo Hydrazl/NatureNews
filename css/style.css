@@ -249,6 +249,11 @@ details[open] summary {
     margin-top: 4px;
 }
 
+.dropdown-menu li:hover {
+  border: 2px solid #95a5a6;
+  border-radius: 3px;
+}
+
 .modal {
     display: none;
     position: fixed;

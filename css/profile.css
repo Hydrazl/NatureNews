@@ -26,6 +26,7 @@ section.container {
     position: relative;
     transform: translate(11.5rem, -7.4rem);
     font-size: 1.3rem;
+    color: #2c3e50;
 }
 
 .user-block ion-icon {
@@ -48,6 +49,10 @@ section.container {
     border-radius: 8px;
 }
 
+.bio-container p {
+  color: #34495e;
+}
+
 /* Notice Aside */
 .notice-aside {
     background-color: #d9d9d9;
@@ -62,13 +67,14 @@ section.container {
 .settings-container h1 {
     font-size: 1.4rem;
     transform: translate(0, 0.5rem);
+    color: #2c3e50;
 }
 
 .notice-aside i {
     display: inline-flex;
     font-size: 1.3rem;
     margin-right: 0.3rem;
-    color: black;
+    color: #f39c12;
 }
 
 /* Notes-Articles */
@@ -97,6 +103,7 @@ section.container {
     font-size: 2rem;
     margin-right: 0.5rem;
     vertical-align: -0.4rem;
+    color: #0a5a3b;
 }
 
 /* Settigs */
@@ -116,10 +123,12 @@ section.container {
     margin-right: 0.5rem;
     vertical-align: -0.5rem;
     transition: transform 4s ease;
+    color: #95a5a6;
 }
 
 .settings-container:hover ion-icon{
     transform: rotate(480deg);
+    color: #1c753e;
 }
 
 .settings-block {
@@ -129,8 +138,105 @@ section.container {
     width: 97%;
     justify-self: center;
     transform: translate(0, 2rem);
+    padding: 1.5rem;
+}
+.settings-layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem 0;
 }
 
-.settings-layout {
-    display: inline-flex;
+.settings-layout p {
+    color: #2c3e50;
+    margin: 0;
+    flex: 1;
+}
+
+.settings-layout span {
+    font-size: 1rem;
+    margin-right: 0.3rem;
+    font-weight: 600;
+    color: #34495e;
+}
+
+.settings-layout button {
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    background-color: #0a5a3b;
+    color: #ffffff;
+    border: 2px solid #093D2A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    min-width: 140px;
+}
+
+.settings-layout button:hover {
+    background-color: #1c753e;
+    border-color: #0E5B40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(28, 117, 62, 0.3);
+}
+
+.settings-layout button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(28, 117, 62, 0.2);
+}
+
+.settings-layout button a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Botão especial para deletar conta */
+.settings-layout:last-child button {
+    background-color: #F01500; /* Vermelho danger do site */
+    border-color: #d12c00;
+}
+
+.settings-layout:last-child button:hover {
+    background-color: #d12c00;
+    border-color: #b02400;
+    box-shadow: 0 4px 8px rgba(240, 21, 0, 0.3);
+}
+
+/* Melhorias no modal */
+.modal-content {
+    background-color: #ecf0f1; /* Fundo mais suave */
+    padding: 2rem 3rem;
+    border-radius: 12px;
+    max-width: 800px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.modal-content p {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 1.5rem;
+}
+
+/* Link button no modal */
+.link-button {
+    background-color: #F01500; /* Vermelho danger do site */
+    color: white;
+    padding: 0.8rem 2rem;
+    margin: 2rem 1rem 0;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.link-button:hover {
+    background-color: #d12c00;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(240, 21, 0, 0.4);
+}
+
+#delete-account {
+  display: none;
 }
