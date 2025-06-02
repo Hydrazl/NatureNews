@@ -20,13 +20,80 @@ article.container {
     height: 80%;
     width: 97%;
     min-height: 40vh;
+    resize: none;
 }
 
 .send-container::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(31, 29, 29, 0.7);
 }
 
 .send-container:focus {
-    background-color: rgba(255, 255, 255, 0.25);
+    background-color: rgba(80, 70, 70, 0.25);
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border: 0 none;
+    outline: 0;
+}
+
+article.container h1 {
+    color: #2c3e50;
+}
+
+article.container ion-icon {
+    display: inline-flex;
+    color: #0a5a3b;
+    vertical-align: -5px;
+    font-size: 1.7rem;
+    margin-right: 0.4rem;
+}
+
+article.container button {
+    justify-self: end;
+    margin-right: 2rem;
+    border-radius: 6px;
+    padding: 0.5rem 1rem;
+    background-color: #0a5a3b;
+    color: #ffffff;
+    border: 2px solid #093D2A;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 0.9rem;
+    min-width: 140px;
+}
+
+article.container button:hover {
+    background-color: #1c753e;
+    border-color: #0E5B40;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(28, 117, 62, 0.3);
+}
+
+article.container button:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(28, 117, 62, 0.2);
+}
+
+#modal-send {
+    display: none;
+}
+
+.modal-content {
+    padding: 2rem 1rem;
+}
+
+.link-button {
+    background-color: var(--tertiary);
+    color: white;
+    padding: 0.2rem;
+    margin-left: 10rem; margin-right: 10rem; margin-top: 2rem;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.link-button:hover {
+    background-color: #1c753e;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(28, 117, 62, 0.3);
+    outline: 2px solid #0E5B40;
+    outline-offset: 3px;
 }

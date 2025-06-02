@@ -38,7 +38,7 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="">
+                                <a href="user-profile.html">
                                     <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
                                 </a>
                             </li>
@@ -93,8 +93,23 @@
     <!-- Main -->
      <section class="container">
         <article class="container">
-            <h1>Envie aqui a sua notícia!</h1>
+            <h1><ion-icon name="paper-plane-outline"></ion-icon>Envie aqui a sua notícia!</h1>
                 <textarea class="send-container" placeholder="Digite aqui a sua notícia..."></textarea>
+                <button class="send-btn">
+                    <label for="modal-send">Enviar Notícia</label>
+                </button>
+
+                <!-- Send Modal -->
+                <input type="checkbox" id="modal-send" hidden>
+                <div class="modal">
+                    <div class="modal-content">
+                      <p>Sua notíca foi enviada com sucesso! iremos verificar e em <br> seguida enviaremos um email para a sua caixa de email.</p>
+                      
+                      <a href="user-send.html" class="link-button">
+                        Continuar
+                      </a>
+                    </div>
+                  </div>
         </article>
      </section>
 
