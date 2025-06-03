@@ -100,15 +100,15 @@ article.container button:active {
 
 
 /* Denuncie Container */
-.Denuncie-fixed {
+.container-fixed {
     min-height: 35vh;
 }
 
-.Denuncie-fixed p {
+.container-fixed p {
     color: #100C08;
 }
 
-.Denuncie-fixed span {
+.container-fixed span {
     display: inline;
     font-weight: 700;
     color: #063524;
