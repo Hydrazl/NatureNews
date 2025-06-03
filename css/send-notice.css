@@ -97,3 +97,19 @@ article.container button:active {
     outline: 2px solid #0E5B40;
     outline-offset: 3px;
 }
+
+
+/* Denuncie Container */
+.Denuncie-fixed {
+    min-height: 35vh;
+}
+
+.Denuncie-fixed p {
+    color: #100C08;
+}
+
+.Denuncie-fixed span {
+    display: inline;
+    font-weight: 700;
+    color: #063524;
+}

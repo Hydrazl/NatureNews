@@ -1,18 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <!-- Metatags -->
-    <meta name="viewport" content="width=device-width, initial-scale">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- Links -->
-    <link rel="stylesheet" href="../../css/ma.css">
+    <!--Links-->
     <link rel="stylesheet" href="../../css/style.css">
-    
+    <link rel="stylesheet" href="../../css/send-notice.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
-    
+
     <title>Nature News</title>
 </head>
 
@@ -68,7 +65,7 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- Pop-Up Log-Out -->
         <input type="checkbox" id="modal-toggle" hidden>
         <div class="modal">
@@ -86,54 +83,49 @@
         
         <!-- navbar -->
         <nav class="container">
-            <div class="meio"><a href="environment/environment.html"><button>Meio Ambiente</button></a></div>
-            <div class="mudanças"><a href="../../index.html"><button>Mudanças Climáticas</button></a></div>
+            <div class="meio"><a href="user-environment/user-environment.html"><button>Meio Ambiente</button></a></div>
+            <div class="mudanças"><a href="user-home.html"><button>Mudanças Climáticas</button></a></div>
             <div class="prevenções"><button>Prevenções Ambientais</button></div>
             <div class="tecnologias"><button>tecnologias Sustentáveis</button></div>  
         </nav>
     </header>
 
-    <!--noticias-->
-    <main>
-        <h1 class="titulo" id="ma">MEIO AMBIENTE</h1>
-            <section>
-                <!--not1-->
-                <article class="containerimg">
-                    <div class="image-left"><img src="../../img/environment/c145234599078b4ade63bcffb7108de2.jpg" alt="Aquecimento Global"></div>
-                    <div class="text">
-                        <h3>Aumento das temperaturas globais no primeiro trimestre de 2025</h3>
-                        <p>Primeiros Meses de 2025: Recordes de Temperatura Consolidam Tendência de Aquecimento Global</p>
-                    </div>
-                </article>
+    <!-- Main -->
+     <section class="container">
+        <article class="container">
+            <h1><ion-icon name="megaphone-outline"></ion-icon>Sistema de Denúncia de Problemas Ambinetais</h1>
+            <div class="send-container Denuncie-fixed">
+                <p>Esta página faz parte do compromisso do <span>Nature News</span> em oferecer serviços que incentivem a <span>proteção do meio ambiente</span> e o <span>engajamento social</span>. Aqui, você pode realizar <span>denúncias anônimas e seguras</span> sobre diversos problemas ambientais, como desmatamento, queimadas, poluição de rios, descarte irregular de resíduos, maus-tratos a animais, entre outras infrações.<br><br>
 
-                <!--not2-->
-                <article class="containerimg2">
-                    <div class="image-left"><img src="../../img/environment/Mapa_Europa.jpg" alt="Mapa Europa"></div>
-                    <div class="text">
-                        <h3>Programa de transição energética da União Europeia</h3>
-                        <p>Horizonte Verde 2030: O Ambicioso Programa de Transição Energética da União Europeia</p>
-                    </div>
-                </article>
+                    Nosso sistema garante que sua identidade seja preservada, proporcionando um ambiente seguro para que qualquer pessoa possa contribuir com informações relevantes, sem medo de retaliação.<br><br>
+                    
+                    Assim que a denúncia é recebida, nossa equipe realiza uma <span>avaliação criteriosa</span> para verificar a <span>veracidade e a consistência dos dados</span>. Confirmadas as evidências, <span>entramos em contato com os órgãos e autoridades competentes</span>, assegurando que as medidas legais e administrativas necessárias sejam adotadas.<br><br>
+                    
+                    O <span>Nature News</span> entende que o combate aos crimes ambientais depende da participação ativa da sociedade. Por isso, disponibilizamos este canal como mais uma ferramenta de apoio à <span>preservação do meio ambiente</span> e à <span>construção de um futuro mais sustentável</span>.<br><br>
+                    
+                    Sua denúncia pode fazer a diferença.</p>
+            </div>
+        </article>
+        <article class="container">
+            <h1><ion-icon name="paper-plane-outline"></ion-icon>Envie aqui a sua Denúncia!</h1>
+                <textarea class="send-container" placeholder="Digite aqui a sua denúncia..."></textarea>
+                <button class="send-btn">
+                    <label for="modal-send">Enviar Denúncia</label>
+                </button>
 
-                <!--not3-->
-                <article class="containerimg3">
-                    <div class="image-left"><img src="../../img/environment/photo-1645430785543-5d985566d361.avif" alt="Amazônia"></div>
-                    <div class="text">
-                        <h3>Redução do desmatamento na Amazônia</h3>
-                        <p>Reviravolta Verde: Brasil Registra Queda Histórica no Desmatamento Amazônico</p>
+                <!-- Send Modal -->
+                <input type="checkbox" id="modal-send" hidden>
+                <div class="modal modal-send">
+                    <div class="modal-content modal-content-send">
+                      <p>Sua Denúncia foi envida com sucesso! Nós faremos uma avaliação <br> e em seguida enviaremos para as autoridades para tomarem providências sobre o caso. Manteremos você informado pelo seu E-mail ou Caixa de Mensagens.</p>
+                      
+                      <a href="environment-problem.html" class="link-button-send">
+                        Continuar
+                      </a>
                     </div>
-                </article>
-                
-                <!--not4-->
-                <article class="containerimg4">
-                    <div class="image-left"><img src="../../img/environment/photo-1611270418920-2af53328f8d8.avif" alt="Captura de Carbono"></div>
-                    <div class="text">
-                        <h3>Nova tecnologia de captura de carbono na Noruega</h3>
-                        <p>Inovação Nórdica: Noruega Lidera Revolução na Tecnologia de Captura de Carbono</p>
-                    </div>
-                </article> 
-            </section>
-        </main>
+                  </div>
+        </article>
+     </section>
 
         <!-- Footer -->
         <footer class="footer">
@@ -150,31 +142,31 @@
 
                         <ul class="social-list">
                             <li>
-                                <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-facebook"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-youtube"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-instagram"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://x.com/?lang=pt" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-twitter"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.linkedin.com/login/pt" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
@@ -188,14 +180,14 @@
 
                         <ul>
                             <li>
-                                <a href="environment.html">Meio Ambiente
-                                    <ion-icon name="open-outline" class="icons-map"></ion-icon>
+                                <a href="user-environment/user-environment.html">Meio Ambiente
+                                    <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="../../index.html">Mudanças Climáticas
-                                    <ion-icon name="open-outline" class="icons-map"></ion-icon>
+                                <a href="user-home.html">Mudanças Climáticas
+                                    <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
@@ -206,20 +198,20 @@
                             </li>
                             
                             <li>
-                                <a href="#">tecnologias Sustentáveis
+                                <a href="#">Tecnologias Sustentáveis
                                     <ion-icon name="open-outline" class="icons-map"></ion-icon>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">Quem Nós Somos?
-                                    <ion-icon name="open-outline" class="icons-map"></ion-icon>
+                                    <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
 
                             <li>
                                 <a href="#">FAQ
-                                    <ion-icon name="open-outline" class="icons-map"></ion-icon>
+                                    <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                         </ul>
@@ -244,19 +236,20 @@
                             </li>
                             
                             <li>
-                                <a href="../policy.html" class="footer-link">Política de Privacidade
+                                <a href="policy.html" class="footer-link" id="space">Política de Privacidade
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="../terms.html" class="footer-link">Termos de Uso
+                                <a href="terms.html" class="footer-link">Termos de Uso
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="footer-link link">Denuncie problemas ambientais
+                                <a href="#" class="footer-link link" id="space">
+                                    Denuncie problemas ambientais
                                     <ion-icon name="alert-circle-outline"></ion-icon>
                                 </a>
                             </li>
@@ -328,5 +321,5 @@
     <!-- Ion-Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>            
+</body>           
 </html>
