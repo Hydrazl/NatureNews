@@ -1,12 +1,23 @@
+#ma {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #012619;
+    margin: 2rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
 #ma:hover {
     color: #5eb479;
 }
 
-#ma:after {
+#ma::after {
     content: '';
     position: absolute;
     width: 0;
-    height: 2px;
+    height: 3px;
     bottom: 0;
     left: 50%;
     background-color: #5eb479;
@@ -15,7 +26,7 @@
 }
 
 #ma:hover::after {
-    width: 10%;
+    width: 20%;
 }
 
 /* not1 */
