@@ -77,11 +77,11 @@ article.container button:active {
     display: none;
 }
 
-.modal-content {
+.modal-send-content {
     padding: 2rem 1rem;
 }
 
-.link-button {
+.link-button-send {
     background-color: var(--tertiary);
     color: white;
     padding: 0.2rem;
@@ -90,7 +90,7 @@ article.container button:active {
     transition: all 0.3s ease;
 }
 
-.link-button:hover {
+.link-button-send:hover {
     background-color: #1c753e;
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(28, 117, 62, 0.3);
