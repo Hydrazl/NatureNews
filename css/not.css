@@ -91,3 +91,21 @@ p {
     margin-top: 2rem;
     color: #ffffff;
 }
+
+/*botão voltar*/
+
+.exit {
+    position: fixed;
+    font-size: 70px;
+    color: #1c753e;
+    margin-left: 4%;
+  }
+
+  /*not3*/
+
+  .titlenot3 {
+    margin-left: 23%;
+    color: #093D2A;
+  }
+
+  
