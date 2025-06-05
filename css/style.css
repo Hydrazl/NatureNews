@@ -190,12 +190,31 @@ details {
     transition: all 0.3s ease;
 }
 
+details i,
 details ion-icon {
     display: inline-flex;
     transition: color 0.3s ease;
     vertical-align: -8%;
     font-size: 20px;
     margin-right: 0.3rem;
+}
+
+/* Ajustes no icone do font-awesome */
+details i {
+    font-size: 17px;
+}
+
+.icon .solid {
+    display: none;
+    color: #66d9ff;
+}
+
+.icon:hover .empty {
+    display: none;
+}
+
+.icon:hover .solid {
+    display: inline;
 }
 
 details li {
@@ -206,7 +225,7 @@ details li:hover {
     transform: scale(1.15);
     background-color: rgba(255, 255, 255, 0.1);
     border-color: rgba(0, 0, 0, 0.3);
-    color: #8effb1;
+    color: #66d9ff;
 }
 
 summary {
