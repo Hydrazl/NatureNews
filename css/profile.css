@@ -75,6 +75,12 @@ section.container {
     font-size: 1.3rem;
     margin-right: 0.3rem;
     color: #f39c12;
+    transition: font-size 0.5s ease, transform 4s ease;
+}
+
+.notice-aside:hover i {
+    font-size: 1.8rem;
+    transform: rotate(360deg);
 }
 
 /* Notes-Articles */
@@ -103,7 +109,14 @@ section.container {
     font-size: 2rem;
     margin-right: 0.5rem;
     vertical-align: -0.4rem;
+    color: #95a5a6;
+    transition: color 0.3s ease, transform 0.7s ease, font-size 0.3s ease;
+}
+
+.notes-container:hover ion-icon {
+    transform: rotate(20deg);
     color: #0a5a3b;
+    font-size: 2.3rem;
 }
 
 /* Settigs */
@@ -144,8 +157,7 @@ section.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
-    padding: 0.5rem 0;
+    margin-bottom: 1.3rem;
 }
 
 .settings-layout p {
@@ -191,9 +203,9 @@ section.container {
     text-decoration: none;
 }
 
-/* Botão especial para deletar conta */
+/* Modal - Settings*/
 .settings-layout:last-child button {
-    background-color: #F01500; /* Vermelho danger do site */
+    background-color: #F01500;
     border-color: #d12c00;
 }
 
@@ -203,9 +215,8 @@ section.container {
     box-shadow: 0 4px 8px rgba(240, 21, 0, 0.3);
 }
 
-/* Melhorias no modal */
 .modal-content {
-    background-color: #ecf0f1; /* Fundo mais suave */
+    background-color: #ecf0f1;
     padding: 2rem 3rem;
     border-radius: 12px;
     max-width: 800px;
@@ -219,9 +230,8 @@ section.container {
     margin-bottom: 1.5rem;
 }
 
-/* Link button no modal */
 .link-button {
-    background-color: #F01500; /* Vermelho danger do site */
+    background-color: #F01500;
     color: white;
     padding: 0.8rem 2rem;
     margin: 2rem 1rem 0;

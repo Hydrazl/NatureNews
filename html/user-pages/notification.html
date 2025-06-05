@@ -6,9 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!--Links-->
-    <link rel="stylesheet" href="../css/not.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
     <title>Nature News</title>
 </head>
@@ -17,7 +16,7 @@
     <header class="container">
         <div class="cabecalho">
                 <picture class="logo">
-                    <img src="../img/logo.png" alt="Logo Meio Ambiente">
+                    <img src="../../img/logo.png" alt="Logo Meio Ambiente">
                 </picture>
         
             <!-- Barra de pesquisa -->
@@ -29,75 +28,80 @@
                     </button>
                 </div>
             
-            <!-- Botão de login -->
+            <!-- Account Button -->
                 <div class="login-container">
-                    <a href="login/login.html">
-                        <button class="login-button">
-                            <ion-icon name="person-circle-outline"></ion-icon>
-                            Acessar conta
-                        </button>
-                    </a>
+                    <details>
+                        <summary>
+                            <ion-icon name="person-outline"></ion-icon>Usuário
+                        </summary>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="">
+                                    <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <ion-icon name="chatbubbles-outline"></ion-icon>Notificações
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="">
+                                    <ion-icon name="document-text-outline"></ion-icon>Publicações
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="modal-toggle">
+                                    <ion-icon name="log-out-outline"></ion-icon> Sair
+                                </label>  
+                            </li>
+                        </ul>
+                    </details>
                 </div>
             </div>
         </div>
+
+        <!-- Pop-Up Log-Out -->
+        <input type="checkbox" id="modal-toggle" hidden>
+        <div class="modal">
+            <div class="modal-content">
+                <label class="close" for="modal-toggle">
+                    <ion-icon name="close-circle-outline"></ion-icon>
+                </label>
+              <p>Tem certeza que deseja sair?</p>
+              
+              <a href="../../index.html" class="link-button">
+                Confirmar Saída
+              </a>
+            </div>
+          </div>
         
         <!-- navbar -->
         <nav class="container">
-            <div class="meio"><a href="environment/environment.html"><button>Meio Ambiente</button></a></div>
-            <div class="mudanças"><a href="../index.html"><button>Mudanças Climáticas</button></a></div>
+            <div class="meio"><a href="user-environment/user-environment.html"><button>Meio Ambiente</button></a></div>
+            <div class="mudanças"><a href="user-home.html"><button>Mudanças Climáticas</button></a></div>
             <div class="prevenções"><button>Prevenções Ambientais</button></div>
             <div class="tecnologias"><button>tecnologias Sustentáveis</button></div>  
         </nav>
     </header>
 
-    <!--Main-->
-    <main>
-        <h1 class="title1">Descubra se o seu lixo é reciclável!</h1>
+    <!-- Main -->
+     <section class="notification-section">
+        <article class="notification-article">
+        </article>
+     </section>
 
-        <section>
-            <article class="containerimg"> 
-                <div class="noti1" ><img src="../img/climate_change/notice-1.webp" alt=""></div>
-                <div class="text">
-                    <h3 class="title2">Os plásticos de uso único</h3>
-                    <p>
-                        Sabe aquela colherzinha de plástico fina que se usa para adoçar o café? Ou o saquinho de plástico em que é embalado o palito de dente? Esses são plásticos de uso único. Depois de usar uma vez, eles não têm qualquer outra serventia. São minutos de impacto no dia de alguém, para séculos de impacto no meio ambiente.
-                        É fato que eles são de plástico e, em teoria, o plástico é reaproveitável. Mas, eles não têm reciclabilidade. O presidente da Ancat explica que são máquinas que identificam e separam toneladas de plásticos que passam pelas cooperativas. Esses plásticos são tão pequenos e finos que acabam não sendo detectados, se perdendo na separação.
-                    </p>
-
-                    <h3 class="title2">O que pode ser feito?</h3>
-                    <p>A professora especialista em sustentabilidade da FGV, Luciana Branchini, explica que não deveríamos ter novas demandas por plástico de embalagens, principalmente, com a quantidade do produto já disponível no planeta. A saída seria endurecer as regras e obrigas as empresas a cuidar do lixo que produzem. Com o custo, toda a cadeia seria repensada. <br><br>
-                    🔴 Recentemente, os grandes players mundiais de bebidas anunciaram a redução dos números de reciclagem. Segundo a especialista, isso acontece por uma flexibilidade de leis. <br><br>
-                    Ela ainda reforça que um dos meios é pensar na tecnologia das embalagens. Por exemplo, você sabia que a maior parte das embalagens de batons, por exemplo, não são totalmente recicláveis, apesar de serem de plástico ?É fato que os produtos precisam delas para chegarem ao consumidor final, mas há meios de produzir embalagens que sejam 100% recicláveis.
-                    </p>
-
-                    <h3 class="title2">E o que o consumidor pode fazer?</h3>
-                    <p>Os especialistas com quem o g1 conversou explicam que tudo começa na consciência de separar o lixo reciclável de forma correta, não misturado com o lixo orgânico.
-
-                    Depois, observar sua própria produção de lixo e fazer escolhas melhores. Como por exemplo:</p>
-
-                    <ul class="list">
-                        <li class="como">* Evite garrafas PET coloridas no consumo do seu produto;</li>
-                        <li class="como">* Na hora de pedir delivery, não peça talheres. Tenha na bolsa talheres de metal reserva;</li>
-                        <li class="como">* Tenha sua própria garrafa, assim você evita usar copinhos plásticos;</li>
-                        <li class="como">* Fique atento ao selo de reciclável, nem tudo o que é reciclável acaba sendo reciclado. Não se ampare nisso para produzir mais lixo plástico.</li>
-                        <li class="como">* Evite sacolas plásticas usando sacolas retornáveis;</li>
-                        <li class="como">* Separe o lixo de maneira correta;</li>
-                        <li class="como">* Se houver escolha, prefira as embalagens retornáveis;</li>
-                        <li class="como">* Prefira embalagens que são refis, assim você mesmo consegue reutilizar;</li>
-                        <li class="como">* Evite o uso excessivo de embalagens. No mercado, por exemplo, pese a fruta direto na balança e guarde na sua sacola reutilizável, evitando o uso de plástico.</li>
-                    </ul>
-                </div>
-            </article>
-        </section>
-    </main>
-
-     <!-- Footer -->
+        <!-- Footer -->
         <footer class="footer">
             <div class="section footer-top">
                 <div class="container-footer">
                     <div class="footer-brand">
                         <a href="" class="logo" id="footer-logo">
-                            <img src="../img/logo.png" alt="logo" width="150" height="75">
+                            <img src="../../img/logo.png" alt="logo" width="150" height="75">
                         </a>
 
                         <p class="footer-text">
@@ -106,31 +110,31 @@
 
                         <ul class="social-list">
                             <li>
-                                <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-facebook"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.youtube.com/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-youtube"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.instagram.com/" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-instagram"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://x.com/?lang=pt" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-twitter"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="https://www.linkedin.com/login/pt" target="_blank" class="social-link">
+                                <a href="" class="social-link">
                                     <ion-icon name="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
@@ -144,13 +148,13 @@
 
                         <ul>
                             <li>
-                                <a href="html/environment/environment.html">Meio Ambiente
+                                <a href="user-environment/user-environment.html">Meio Ambiente
                                     <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="#">Mudanças Climáticas
+                                <a href="user-home.html">Mudanças Climáticas
                                     <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
@@ -188,7 +192,7 @@
 
                         <ul>
                             <li>
-                                <a href="#" class="footer-link">Envie sua notícia
+                                <a href="user-send.html" class="footer-link">Envie sua notícia
                                     <ion-icon name="paper-plane-outline"></ion-icon>
                                 </a>
                             </li>
@@ -200,19 +204,19 @@
                             </li>
                             
                             <li>
-                                <a href="html/policy.html" class="footer-link" id="space">Política de Privacidade
+                                <a href="policy.html" class="footer-link" id="space">Política de Privacidade
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="html/terms.html" class="footer-link">Termos de Uso
+                                <a href="terms.html" class="footer-link">Termos de Uso
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="footer-link link" id="space">
+                                <a href="environment-problem.html" class="footer-link link" id="space">
                                     Denuncie problemas ambientais
                                     <ion-icon name="alert-circle-outline"></ion-icon>
                                 </a>
@@ -282,8 +286,8 @@
             </div>
         </footer>
 
-<!-- Ion-Icons -->
+    <!-- Ion-Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>
+</body>           
 </html>
