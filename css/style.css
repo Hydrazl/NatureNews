@@ -557,3 +557,43 @@ ion-icon.icons-map {
 .copyright {
     margin-top: 1.6rem;
 }
+
+/* Notification */
+body.notification {
+    background: url(../img/notification_background.jpg);
+}
+
+section.notification {
+    display: grid;
+    gap: 40px;
+    margin-top: 3rem;
+    padding: 3rem;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+article.notification {
+    padding: 2rem;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+picture.notification {
+    background-color: #aaa;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+picture.notification img {
+    width: 100%;
+    height: 100%;
+    object-fit: center;
+    object-position: center;
+    border-radius: 50%;
+}
