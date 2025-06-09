@@ -8,10 +8,10 @@
   <title>Nature News</title>
 
   <!-- Links -->
-  <link rel="stylesheet" href="../css/policy.css">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../../css/policy.css">
+  <link rel="stylesheet" href="../../css/style.css">
   
-  <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
 
   <!-- Script dos Icons -->
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -26,7 +26,7 @@
     <header class="container">
         <div class="cabecalho">
                 <picture class="logo">
-                    <a href="../index.html"><img src="../img/logo.png" alt="Logo"></a>
+                    <a href="../../index.html"><img src="../../img/logo.png" alt="Logo"></a>
                 </picture>
         
             <!-- Barra de pesquisa -->
@@ -38,14 +38,39 @@
                     </button>
                 </div>
             
-            <!-- Botão de login -->
+                <!-- Account Button -->
                 <div class="login-container">
-                    <a href="login/login.html">
-                        <button class="login-button">
-                            <ion-icon name="person-circle-outline"></ion-icon>
-                            Acessar conta
-                        </button>
-                    </a>
+                    <details>
+                        <summary>
+                            <ion-icon name="person-outline"></ion-icon>Usuário
+                        </summary>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="user-profile.html">
+                                    <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
+                                </a>
+                            </li>
+
+                            <li class="icon">
+                                <a href="">
+                                    <i class="fa-regular fa-comments empty"></i><i class="fa-solid fa-comments solid"></i>Mensagens
+                                </a>
+                            </li>
+
+                            <li class="icon">
+                                <a href="notification.html">
+                                    <i class="fa-regular fa-bell empty"></i><i class="fa-solid fa-bell solid"></i>Notificações
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="modal-toggle">
+                                    <ion-icon name="log-out-outline"></ion-icon> Sair
+                                </label>  
+                            </li>
+                        </ul>
+                    </details>
                 </div>
             </div>
         </div>
@@ -53,7 +78,7 @@
         <!-- navbar -->
         <nav class="container">
             <div class="meio"><a href="environment/environment.html"><button>Meio Ambiente</button></a></div>
-            <div class="mudanças"><a href="../index.html"><button>Mudanças Climáticas</button></a></div>
+            <div class="mudanças"><a href="../../index.html"><button>Mudanças Climáticas</button></a></div>
             <div class="prevenções"><button>Prevenções Ambientais</button></div>
             <div class="tecnologias"><button>tecnologias Sustentáveis</button></div>  
         </nav>
@@ -145,7 +170,7 @@
               <div class="container-footer">
                   <div class="footer-brand">
                       <a href="" class="logo" id="footer-logo">
-                          <img src="../img/logo.png" alt="logo" width="150" height="75">
+                          <img src="../../img/logo.png" alt="logo" width="150" height="75">
                       </a>
 
                       <p class="footer-text">
@@ -192,13 +217,13 @@
 
                       <ul>
                           <li>
-                              <a href="../html/environment/environment.html">Meio Ambiente
+                              <a href="../../html/environment/environment.html">Meio Ambiente
                                   <ion-icon name="open-outline"class="icons-map"></ion-icon>
                               </a>
                           </li>
                           
                           <li>
-                              <a href="../index.html">Mudanças Climáticas
+                              <a href="../../index.html">Mudanças Climáticas
                                   <ion-icon name="open-outline"class="icons-map"></ion-icon>
                               </a>
                           </li>
@@ -236,7 +261,7 @@
 
                     <ul>
                         <li>
-                            <a href="warning-login.html" class="footer-link">Envie sua notícia
+                            <a href="../../warning-login.html" class="footer-link">Envie sua notícia
                                 <ion-icon name="paper-plane-outline"></ion-icon>
                             </a>
                         </li>
@@ -248,19 +273,19 @@
                         </li>
                         
                         <li>
-                            <a href="policy.html" class="footer-link" id="space">Política de Privacidade
+                            <a href="user-policy.html" class="footer-link" id="space">Política de Privacidade
                                 <ion-icon name="document-text-outline"></ion-icon>
                             </a>
                         </li>
                         
                         <li>
-                            <a href="terms.html" class="footer-link">Termos de Uso
+                            <a href="user-terms.html" class="footer-link">Termos de Uso
                                 <ion-icon name="document-text-outline"></ion-icon>
                             </a>
                         </li>
 
                         <li>
-                            <a href="warning-login.html" class="footer-link link" id="space">
+                            <a href="environment-problem.html" class="footer-link link" id="space">
                                 Denuncie problemas ambientais
                                 <ion-icon name="alert-circle-outline"></ion-icon>
                             </a>
