@@ -609,19 +609,24 @@ section.notification-section h1 {
 
 .bell {
     position: relative;
-    left: 55%;
+    margin-left: auto;
+    margin-right: 1rem;
     font-size: 2rem;
     color: #012619;
     padding: 1rem;
     border-radius: 100%;
     transition: all 0.3s ease;
+    width: 4rem;
+    height: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .bell:hover {
     border-radius: 100%;
     color: #012619;
     background-color: #0E5B40;
-    padding: 1rem;
 }
 
 .spacing {
