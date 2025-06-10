@@ -563,7 +563,7 @@ body.notification {
     background: url(../img/notification_background.jpg);
 }
 
-section.notification {
+main.notification {
     display: grid;
     gap: 40px;
     margin-top: 3rem;
@@ -571,7 +571,7 @@ section.notification {
     grid-template-columns: repeat(1, 1fr);
 }
 
-article.notification {
+section.notification-section {
     padding: 2rem;
     background-color: #d9d9d9;
     border-radius: 8px;
@@ -586,8 +586,8 @@ article.notification {
 picture.notification {
     background-color: #aaa;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     overflow: hidden;
     position: relative;
     display: flex;
@@ -603,14 +603,87 @@ picture.notification img {
     border-radius: 50%;
 }
 
-article.notification h1 {
+section.notification-section h1 {
     font-size: 2rem;
 }
 
+.bell {
+    position: relative;
+    left: 55%;
+    font-size: 2rem;
+    color: #012619;
+    padding: 1rem;
+    border-radius: 100%;
+    transition: all 0.3s ease;
+}
+
+.bell:hover {
+    border-radius: 100%;
+    color: #012619;
+    background-color: #0E5B40;
+    padding: 1rem;
+}
+
 .spacing {
-    background-color: #000;
+    background: linear-gradient(to right, transparent, rgba(0, 68, 9, 0.3), transparent);
     height: 2px;
     width: 90%;
     justify-self: center;
     margin-top: 2rem;
+}
+
+article.notification-block{
+    padding: 1rem;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+}
+
+article.notification-block p {
+    position: relative;
+    display: flex;
+}
+
+article.notification-block p ion-icon {
+    display: inline-flex;
+    font-size: 1.7rem;
+}
+
+article.notification-block p::before {
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: 1;
+  bottom: 0;
+  height: 50px;
+  width: 4px;
+  background-color: #2e7d32;
+  border-radius: 2px;
+}
+
+#leaf,
+#fire,
+#tree,
+#calendar,
+#burn,
+#water {
+    margin-right: 0.5rem;
+    color: #0a8f15;
+    vertical-align: middle;
+    font-size: 1.3rem;
+}
+
+#water {
+    color: #09a0b4;
+}
+
+#fire {
+    color: #b40909;
+}
+
+#calendar {
+    color: #e53935;
+}
+
+#burn {
+    color: #da4004;
 }
