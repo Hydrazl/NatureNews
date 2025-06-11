@@ -29,6 +29,101 @@
     width: 20%;
 }
 
+#ma {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #012619;
+    margin: 2rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#ma:hover {
+    color: #5eb479;
+}
+
+#ma::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #5eb479;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#ma:hover::after {
+    width: 20%;
+}
+
+/*pa*/
+
+#pa {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #012619;
+    margin: 2rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#pa:hover {
+    color: #ffd28e;
+}
+
+#pa::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffd28e;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#pa:hover::after {
+    width: 20%;
+}
+
+#pa {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #012619;
+    margin: 2rem 0;
+    padding: 1rem;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+#pa:hover {
+    color: #ffd28e;
+}
+
+#pa::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 50%;
+    background-color: #ffd28e;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+#pa:hover::after {
+    width: 40%;
+}
+
 /* not1 */
 .containerimg {
     display: flex;
@@ -61,7 +156,7 @@
     
 .containerimg p {
     margin-left: 20px;
-    font-size: 29px;
+    font-size: 23px;
     line-height: 1.4;
     font-weight: 500;
     color: #333;
@@ -116,7 +211,7 @@
 
 .containerimg2 p {
     margin-left: 20px;
-    font-size: 29px;
+    font-size: 23px;
     line-height: 1.4;
     font-weight: 500;
     color: #333;
@@ -171,7 +266,7 @@
 
 .containerimg3 p {
     margin-left: 20px;
-    font-size: 29px;
+    font-size: 23px;
     line-height: 1.4;
     font-weight: 500;
     color: #333;
@@ -226,7 +321,7 @@
 
 .containerimg4 p {
     margin-left: 20px;
-    font-size: 29px;
+    font-size: 23px;
     line-height: 1.4;
     font-weight: 500;
     color: #333;
