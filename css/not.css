@@ -1,7 +1,6 @@
 /*Noti1*/
 
 .title1 {
-    margin: 2%;
     margin-left: 36%;
     color: #093D2A;
 }
@@ -56,7 +55,7 @@
 
 .titlenot2 {
     margin: 2%;
-    margin-left: 16%;
+    margin-left: 18%;
     color: #093D2A;
 }
 
@@ -95,10 +94,11 @@ p {
 /*botão voltar*/
 
 .exit {
-    position: fixed;
+    position: absolute;
     font-size: 70px;
     color: #1c753e;
     margin-left: 4%;
+    margin-top: 20px;
   }
 
   /*not3*/
