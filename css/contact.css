@@ -12,40 +12,106 @@ section {
     border: 3px solid whitesmoke;
     padding: 1rem;
     backdrop-filter: blur(0.4rem);
+    padding: 2rem, 4rem;
     min-width: 1000px;
     max-width: 1000px;
 }
 
+/* Logo */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-ajuste {
+    width: 50%;
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+
 h1 {
     display: flex;
-    justify-self: center;
+    text-align: center;
     position: relative;
-    font-size: 2rem; color: white;
+    font-size: 3rem; color: white;
 }
 
 h1::before {
     content: "";
     position: absolute;
-    top: 2.7rem;
-    left: 5rem;
+    top: 3.2rem;
     height: 5px;
     width: 60px;
     margin-top:5px;
-    border-radius: 8px;
-    background-color: red;
+    border-radius: 5px;
+    background-color: #3bae51;
 }
 
 article {
     display: grid;
-    grid-template-columns: 60% 40%;
+    grid-template-columns: auto;
     gap: 50px;
 }
 
 h2 {
+    margin-top: 0.5rem;
+    position: relative;
     color: white;
+    left: 1rem;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.divisor {
+    display: grid;
+    gap: 10px;
+}
+
+.input-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-self: flex-start;
+    gap: 17.5dvw;
 }
 
 .input input,
 .input textarea:focus {
     outline: none;
+}
+
+.input input,
+.input textarea {
+    padding: 0.5rem;
+    width: 200%;
+    border-radius: 8px;
+}
+
+.input textarea {
+    margin-right: 3rem;
+    padding: 0.5rem;
+    padding-bottom: 5rem;
+    resize: none;
+}
+
+.input textarea::placeholder {
+    text-align: start;
+}
+
+.btn {
+    text-align: center;
+    justify-self: center;
+    align-self: center;
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+}
+
+.btn input {
+    font-size: 1.2rem;
 }
