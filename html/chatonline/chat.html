@@ -1,25 +1,24 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-     <!-- Metatags -->
-    <meta name="viewport" content="width=device-width, initial-scale">
+    <!--meta tags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Links -->
-    <link rel="stylesheet" href="../../css/ma.css">
+
+    <!--Links-->
     <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/home.css">
+    <link rel="stylesheet" href="../../css/chat.css">
     <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
-    
+
     <title>Nature News</title>
-
 </head>
-
 <body>
-     <div class="cabecalho">
-            <picture class="logo">
-                <a href="../../index.html"><img src="../../img/logo.png" alt="Logo"></a>
-            </picture>
+     <header class="container">
+        <div class="cabecalho">
+                <picture class="logo">
+                    <a href="#"><img src="../../img/logo.png" alt="Logo"></a>
+                </picture>
         
             <!-- Barra de pesquisa -->
             <div class="right-elements">
@@ -31,69 +30,107 @@
                 </div>
             
             <!-- Botão de login -->
+             <!-- Account Button -->
                 <div class="login-container">
-                    <a href="../login/login.html">
-                        <button class="login-button">
-                            <ion-icon name="person-circle-outline"></ion-icon>
-                            Acessar conta
-                        </button>
-                    </a>
-                </div>
+                    <details>
+                        <summary>
+                            <ion-icon name="person-outline"></ion-icon>Usuário
+                        </summary>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="user-profile.html">
+                                    <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
+                                </a>
+                            </li>
+
+                            <li class="icon">
+                                <a href="">
+                                    <i class="fa-regular fa-comments empty"></i><i class="fa-solid fa-comments solid"></i>Mensagens
+                                </a>
+                            </li>
+
+                            <li class="icon">
+                                <a href="notification.html">
+                                    <i class="fa-regular fa-bell empty"></i><i class="fa-solid fa-bell solid"></i>Notificações
+                                </a>
+                            </li>
+
+                            <li>
+                                <label for="modal-toggle">
+                                    <ion-icon name="log-out-outline"></ion-icon> Sair
+                                </label>  
+                            </li>
+                        </ul>
+                    </details>
+                </div>  
             </div>
         </div>
         
         <!-- navbar -->
         <nav class="container">
-            <div class="meio"><a href="../../html/environment/environment.html"><button>Meio Ambiente</button></a></div>
-            <div class="mudanças"><a href="../../index.html"><button>Mudanças Climáticas</button></a></div>
-            <div class="prevenções"><a href="html/prevencoes"><button>Prevenções ambientais</button></a></div>
-            <div class="tecnologias"><a href="../../html/tecnologias/tecnologias.html"><button>tecnologias suatentaveis</button></a></div>  
+            <div class="meio"><a href="html/environment/environment.html"><button>Meio Ambiente</button></a></div>
+            <div class="mudanças"><a href="../user-pages/user-home.html"><button>Mudanças Climáticas</button></a></div>
+            <div class="prevenções"><a href="../prevencoes/prevenções.html"><button>Prevenções Ambientais</button></a></div>
+            <div class="tecnologias"><a href="../tecnologias/tecnologias.html"><button>Tecnologias Sustentaveis</button></a></div>
         </nav>
     </header>
 
-    <!--noticias-->
-    <main>
-        <h1 class="titulo" id="pa">PREVENÇÕES AMBIENTAIS</h1>
-            <section>
-                <!--not1-->
-                <article class="containerimg">
-                    <div class="image-left"><img src="../../img/prevencoes/pa not 1.webp" alt="madereira"></div>
-                    <div class="text">
-                        <p>Madeireira é multada em R$ 1,6 mil por irregularidades com Documento de Origem Florestal em Regente Feijó
-                        Uma madeireira foi multada em R$ 1,6 mil após a Polícia Militar Ambiental constatar irregularidades no Documento de Origem Florestal (DOF) na quarta-feira (2), em Regente Feijó (SP).</p>
-                    </div>
-                </article>
+    <!--Chat online-->
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Chat Online</h1>
+            <p>converse em tempo real</p>
+            <div class="online-indicador">
+                <div class="status-dot"></div>
+                <span>Online</span>
+            </div>
+        </div>
 
-                <!--not2-->
-                <article class="containerimg2">
-                    <div class="image-left"><img src="../../img/prevencoes/pa not2.webp" alt="forca tarefa"></div>
-                    <div class="text">
-                        <p>Força-tarefa extingue focos de incêndio e reforça monitoramento na Ilha Urubuqueçaba
-                        Uma força-tarefa coordenada pela Prefeitura de Santos extinguiu sete focos de incêndio na Ilha Urubuqueçaba, localizada no bairro José Menino, no litoral de São Paulo, na manhã de quarta-feira (2). Dois homens foram abordados na ilha e tentaram deixar o local ao avistar os agentes.</p>
-                    </div>
-                </article>
+        <div class="chat-mensagem">
+            <div class="mensagem">
+                <div class="mensagem-avatar">AL</div>
+                <div class="mensagem-contato">
+                    <div>Olá!👋</div>
+                    <div class="mensagem-time">10:30</div>
+                </div>
+            </div>
 
-                <!--not3-->
-                <article class="containerimg3">
-                    <div class="image-left"><img src="../../img/prevencoes/pa not3.webp" alt="mineradora"></div>
-                    <div class="text">
-                        <p>Justiça suspende atividades de mineradora suspeita de destruir gruta
-                        A Justiça determinou a suspensão de parte das atividades da mineradora Patrimônio Mineração, em razão da destruição de uma gruta situada na comunidade de Botafogo, no município histórico de Ouro Preto, na Região Central de Minas Gerais.</p>
-                    </div>
-                </article>
-                
-                <!--not4-->
-                <article class="containerimg4">
-                    <div class="image-left"><img src="../../img/prevencoes/pa not4.webp" alt="Limpeza"></div>
-                    <div class="text">
-                        <p>Projeto promove limpeza de praia em Aracaju
-                        Nesta segunda-feira (31), acontece um projeto de preservação e proteção do meio ambiente, na Praia do Refúgio, em Aracaju. A informação é da Secretaria de Estado do Meio Ambiente, Sustentabilidade e Ações Climáticas (Semac).</p>
-                    </div>
-                </article> 
-            </section>
-        </main>
+            <div class="mensagem on">
+                <div class="mensagem-avatar">EU</div>
+                <div class="mensagem-contato">
+                    <div>Oi!</div>
+                    <div class="mensagem-time">10:32</div>
+                </div>
+            </div>
 
-        <!-- Footer -->
+            <div class="mensagem">
+                <div class="mensagem-avatar">AL</div>
+                <div class="mensagem-contato">
+                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis excepturi quisquam possimus natus voluptatem consequuntur! Nesciunt, repellat. Sint harum eos cupiditate.</div>
+                    <div class="mensagem-time">10:33</div>
+                </div>
+            </div>
+
+            <div class="mensagem on">
+                <div class="mensagem-avatar">EU</div>
+                <div class="mensagem-contato">
+                    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima est labore, dolorum possimus, voluptas, maiores eveniet 🎨</div>
+                    <div class="mensgem-time">10:34</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-input">
+            <div class="input-group">
+                <button class="emoji-btn">😊</button>
+                <input type="text" class="message-input" placeholder="Digite sua mensagem...">
+                <button class="send-btn">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer 
         <footer class="footer">
             <div class="section footer-top">
                 <div class="container-footer">
@@ -256,7 +293,7 @@
                         <div class="contact-item">
                             <span class="span"></span>
 
-                            <a href="../chatonline/chat.html" class="contact-link">
+                            <a href="#" class="contact-link">
                                 <ion-icon name="chatbubbles-outline"></ion-icon>
                                 Chat Online
                             </a>
@@ -281,9 +318,9 @@
                     </p>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
-    <!-- Ion-Icons -->
+     <!-- Ion-Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
