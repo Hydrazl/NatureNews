@@ -68,6 +68,16 @@ body {
     margin-left: 1rem;
 }
 
+#moba {
+    display: none;
+}
+
+ion-icon#moba {
+    color: white;
+    font-size: xx-large;
+    cursor: pointer;
+}
+
 .right-elements {
     display: flex;
     align-items: center;
@@ -691,4 +701,42 @@ article.notification-block p::before {
 
 #burn {
     color: #da4004;
+}
+
+@media (max-width:500px) {
+    nav.container {
+        display: none;
+    }
+
+     #logo-pc {
+        display: none;
+    }
+
+    #moba {
+        display: flex;
+    }
+
+    picture.logo img {
+        width: 60%;
+        height: auto;
+    }
+
+    .logo {
+        margin-right: none;
+        margin-left: none;
+        transform: translate(-1.5rem, 0.2rem);
+    }
+
+    .search-wrapper {
+        width: 50px;
+    }
+
+    .search-wrapper:focus-within {
+        width: 110px;
+    }
+
+    .login-button {
+        font-size: smaller;
+        padding: 6px 10px;
+    }
 }

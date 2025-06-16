@@ -153,6 +153,7 @@ section.container {
     transform: translate(0, 2rem);
     padding: 1.5rem;
 }
+
 .settings-layout {
     display: flex;
     justify-content: space-between;
@@ -249,4 +250,8 @@ section.container {
 
 #delete-account {
   display: none;
+}
+
+@media (max-width: 500px) {
+    
 }
