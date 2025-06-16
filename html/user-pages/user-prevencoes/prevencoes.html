@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <!-- Metatags -->
+     <!-- Metatags -->
+    <meta name="viewport" content="width=device-width, initial-scale">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Links-->
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/send-notice.css">
+    <!-- Links -->
+    <link rel="stylesheet" href="../../../css/ma.css">
+    <link rel="stylesheet" href="../../../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
-
+    <link rel="shortcut icon" href="../../../img/favicon.ico" type="image/x-icon">
+    
     <title>Nature News</title>
+
 </head>
 
 <body>
-    <header class="container">
-        <div class="cabecalho">
-                <picture class="logo">
-                    <a href="user-home.html"><img src="../../img/logo.png" alt="Logo"></a>
-                </picture>
+     <div class="cabecalho">
+            <picture class="logo">
+                <a href="../../../index.html"><img src="../../../img/logo.png" alt="Logo"></a>
+            </picture>
         
             <!-- Barra de pesquisa -->
             <div class="right-elements">
@@ -39,7 +40,7 @@
 
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="user-profile.html">
+                                <a href="../user-profile.html">
                                     <ion-icon name="person-circle-outline"></ion-icon>Minha Conta
                                 </a>
                             </li>
@@ -51,7 +52,7 @@
                             </li>
 
                             <li class="icon">
-                                <a href="notification.html">
+                                <a href="../notification.html">
                                     <i class="fa-regular fa-bell empty"></i><i class="fa-solid fa-bell solid"></i>Notificações
                                 </a>
                             </li>
@@ -84,50 +85,54 @@
         
         <!-- navbar -->
         <nav class="container">
-            <div class="meio"><a href="user-environment/user-environment.html"><button>Meio Ambiente</button></a></div>
-            <div class="mudanças"><a href="user-home.html"><button>Mudanças Climáticas</button></a></div>
-            <div class="prevenções"><a href="user-prevencoes/prevencoes.html"></a><button>Prevenções Ambientais</button></div>
-            <div class="tecnologias"><a href="user-technology/technology.html"></a><button>tecnologias Sustentáveis</button></div>  
+            <div class="meio"><a href="../user-environment/user-environment.html"><button>Meio Ambiente</button></a></div>
+            <div class="mudanças"><a href="../user-home.html"><button>Mudanças Climáticas</button></a></div>
+            <div class="prevenções"><a href="../user-prevencoes/prevencoes.html"><button>Prevenções ambientais</button></a></div>
+            <div class="tecnologias"><a href="../user-technology/technology.html"><button>tecnologias suatentaveis</button></a></div>  
         </nav>
     </header>
 
-    <!-- Main -->
-     <section class="container">
-        <article class="container">
-            <h1><ion-icon name="megaphone-outline"></ion-icon>Sistema de Denúncia de Problemas Ambinetais</h1>
-            <div class="send-container container-fixed">
-                <p>Esta página faz parte do compromisso do <span>Nature News</span> em oferecer serviços que incentivem a <span>proteção do meio ambiente</span> e o <span>engajamento social</span>. Aqui, você pode realizar <span>denúncias anônimas e seguras</span> sobre diversos problemas ambientais, como desmatamento, queimadas, poluição de rios, descarte irregular de resíduos, maus-tratos a animais, entre outras infrações.<br><br>
-
-                    Nosso sistema garante que sua identidade seja preservada, proporcionando um ambiente seguro para que qualquer pessoa possa contribuir com informações relevantes, sem medo de retaliação.<br><br>
-                    
-                    Assim que a denúncia é recebida, nossa equipe realiza uma <span>avaliação criteriosa</span> para verificar a <span>veracidade e a consistência dos dados</span>. Confirmadas as evidências, <span>entramos em contato com os órgãos e autoridades competentes</span>, assegurando que as medidas legais e administrativas necessárias sejam adotadas.<br><br>
-                    
-                    O <span>Nature News</span> entende que o combate aos crimes ambientais depende da participação ativa da sociedade. Por isso, disponibilizamos este canal como mais uma ferramenta de apoio à <span>preservação do meio ambiente</span> e à <span>construção de um futuro mais sustentável</span>.<br><br>
-                    
-                    Sua denúncia pode fazer a diferença.</p>
-            </div>
-        </article>
-
-        <article class="container">
-            <h1><ion-icon name="paper-plane-outline"></ion-icon>Envie aqui a sua Denúncia!</h1>
-                <textarea class="send-container" placeholder="Digite aqui a sua denúncia..."></textarea>
-                <button class="send-btn">
-                    <label for="modal-send">Enviar Denúncia</label>
-                </button>
-
-                <!-- Send Modal -->
-                <input type="checkbox" id="modal-send" hidden>
-                <div class="modal modal-send">
-                    <div class="modal-content modal-content-send">
-                      <p>Sua Denúncia foi envida com sucesso! Nós faremos uma avaliação <br> e em seguida enviaremos para as autoridades para tomarem providências sobre o caso. Manteremos você informado pelo seu E-mail ou Caixa de Mensagens.</p>
-                      
-                      <a href="environment-problem.html" class="link-button-send">
-                        Continuar
-                      </a>
+    <!--noticias-->
+    <main>
+        <h1 class="titulo" id="pa">PREVENÇÕES AMBIENTAIS</h1>
+            <section>
+                <!--not1-->
+                <article class="containerimg">
+                    <div class="image-left"><img src="../../../img/prevencoes/pa not 1.webp" alt="madereira"></div>
+                    <div class="text">
+                        <p>Madeireira é multada em R$ 1,6 mil por irregularidades com Documento de Origem Florestal em Regente Feijó
+                        Uma madeireira foi multada em R$ 1,6 mil após a Polícia Militar Ambiental constatar irregularidades no Documento de Origem Florestal (DOF) na quarta-feira (2), em Regente Feijó (SP).</p>
                     </div>
-                  </div>
-        </article>
-     </section>
+                </article>
+
+                <!--not2-->
+                <article class="containerimg2">
+                    <div class="image-left"><img src="../../../img/prevencoes/pa not2.webp" alt="forca tarefa"></div>
+                    <div class="text">
+                        <p>Força-tarefa extingue focos de incêndio e reforça monitoramento na Ilha Urubuqueçaba
+                        Uma força-tarefa coordenada pela Prefeitura de Santos extinguiu sete focos de incêndio na Ilha Urubuqueçaba, localizada no bairro José Menino, no litoral de São Paulo, na manhã de quarta-feira (2). Dois homens foram abordados na ilha e tentaram deixar o local ao avistar os agentes.</p>
+                    </div>
+                </article>
+
+                <!--not3-->
+                <article class="containerimg3">
+                    <div class="image-left"><img src="../../../img/prevencoes/pa not3.webp" alt="mineradora"></div>
+                    <div class="text">
+                        <p>Justiça suspende atividades de mineradora suspeita de destruir gruta
+                        A Justiça determinou a suspensão de parte das atividades da mineradora Patrimônio Mineração, em razão da destruição de uma gruta situada na comunidade de Botafogo, no município histórico de Ouro Preto, na Região Central de Minas Gerais.</p>
+                    </div>
+                </article>
+                
+                <!--not4-->
+                <article class="containerimg4">
+                    <div class="image-left"><img src="../../../img/prevencoes/pa not4.webp" alt="Limpeza"></div>
+                    <div class="text">
+                        <p>Projeto promove limpeza de praia em Aracaju
+                        Nesta segunda-feira (31), acontece um projeto de preservação e proteção do meio ambiente, na Praia do Refúgio, em Aracaju. A informação é da Secretaria de Estado do Meio Ambiente, Sustentabilidade e Ações Climáticas (Semac).</p>
+                    </div>
+                </article> 
+            </section>
+        </main>
 
         <!-- Footer -->
         <footer class="footer">
@@ -135,7 +140,7 @@
                 <div class="container-footer">
                     <div class="footer-brand">
                         <a href="" class="logo" id="footer-logo">
-                            <img src="../../img/logo.png" alt="logo" width="150" height="75">
+                            <img src="../../../img/logo.png" alt="logo" width="150" height="75">
                         </a>
 
                         <p class="footer-text">
@@ -144,31 +149,31 @@
 
                         <ul class="social-list">
                             <li>
-                                <a href="" class="social-link">
+                                <a href="https://pt-br.facebook.com/login/device-based/regular/login/" target="_blank" class="social-link">
                                     <ion-icon name="logo-facebook"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="" class="social-link">
+                                <a href="https://www.youtube.com/" target="_blank" class="social-link">
                                     <ion-icon name="logo-youtube"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="" class="social-link">
+                                <a href="https://www.instagram.com/" target="_blank" class="social-link">
                                     <ion-icon name="logo-instagram"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="" class="social-link">
+                                <a href="https://x.com/?lang=pt" target="_blank" class="social-link">
                                     <ion-icon name="logo-twitter"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="" class="social-link">
+                                <a href="https://www.linkedin.com/login/pt" target="_blank" class="social-link">
                                     <ion-icon name="logo-linkedin"></ion-icon>
                                 </a>
                             </li>
@@ -182,25 +187,25 @@
 
                         <ul>
                             <li>
-                                <a href="user-environment/user-environment.html">Meio Ambiente
+                                <a href="../user-environment/user-environment.html">Meio Ambiente
                                     <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="user-home.html">Mudanças Climáticas
+                                <a href="../user-home.html">Mudanças Climáticas
                                     <ion-icon name="open-outline"class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="user-prevencoes/prevencoes.html">Prevenções Ambientais
+                                <a href="../user-prevencoes/prevencoes.html">Prevenções Ambientais
                                     <ion-icon name="open-outline" class="icons-map"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="user-technology/technology.html">Tecnologias Sustentáveis
+                                <a href="../user-technology/technology.html">Tecnologias Sustentáveis
                                     <ion-icon name="open-outline" class="icons-map"></ion-icon>
                                 </a>
                             </li>
@@ -226,7 +231,7 @@
 
                         <ul>
                             <li>
-                                <a href="user-send.html" class="footer-link">Envie sua notícia
+                                <a href="../user-send.html" class="footer-link">Envie sua notícia
                                     <ion-icon name="paper-plane-outline"></ion-icon>
                                 </a>
                             </li>
@@ -238,20 +243,19 @@
                             </li>
                             
                             <li>
-                                <a href="user-policy.html" class="footer-link" id="space">Política de Privacidade
+                                <a href="../user-policy.html" class="footer-link" id="space">Política de Privacidade
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
                             
                             <li>
-                                <a href="user-terms.html" class="footer-link">Termos de Uso
+                                <a href="../user-terms.html" class="footer-link">Termos de Uso
                                     <ion-icon name="document-text-outline"></ion-icon>
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="footer-link link" id="space">
-                                    Denuncie problemas ambientais
+                                <a href="../environment-problem.html" class="footer-link link" id="space">Denuncie problemas ambientais
                                     <ion-icon name="alert-circle-outline"></ion-icon>
                                 </a>
                             </li>
@@ -293,7 +297,7 @@
                         <div class="contact-item">
                             <span class="span"></span>
 
-                            <a href="chat.html" class="contact-link">
+                            <a href="../chat.html" class="contact-link">
                                 <ion-icon name="chatbubbles-outline"></ion-icon>
                                 Chat Online
                             </a>
@@ -302,7 +306,7 @@
                         <div class="contact-item">
                             <span class="span"></span>
 
-                            <a href="#" class="contact-link">
+                            <a href="../../contact.html" class="contact-link">
                                 <ion-icon name="person-outline"></ion-icon>
                                 Contato
                             </a>
@@ -323,5 +327,5 @@
     <!-- Ion-Icons -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-</body>           
+</body>
 </html>
